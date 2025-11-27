@@ -39,98 +39,57 @@
       </section>
 
       <section class="card">
-        <h2>1. Filtragem</h2>
+        <h2>1. Potência</h2>
         <p>
-          Antes do processo de amostragem, o sinal passa por um filtro para
-          remover frequências que ultrapassam a faixa de interesse. Isso evita o
-          fenômeno chamado
-          <strong>aliasing</strong>, que ocorre quando altas frequências são
-          distorcidas e reaparecem como frequências mais baixas no sinal
-          digital.
+          A potência do som é proporcional ao quadrado da amplitude das vibrações — ou seja,
+            quanto maior a amplitude, maior a energia transportada pela onda.
+        </p>
+        <p>
+            No exemplo abaixo, demonstra a amplitude aumentando gradativamente conforme a energia é transportada:
         </p>
 
-        <p>
-          No caso da voz humana, por exemplo, a faixa útil está entre
-          aproximadamente
-          <strong>300 Hz e 3400 Hz</strong>, então o filtro mantém essa banda e
-          remove as demais.
-        </p>
+        <div class="vetor">
+            <img src="assets/images/vetorial.svg" class="imagem vetorial">
+        </div>
       </section>
 
       <section class="card">
-        <h2>2. Amostragem</h2>
+        <h2>2. Tipos de Vibrações</h2>
         <p>
-          A amostragem converte um sinal contínuo em uma sequência discreta de
-          valores. O sistema coleta “fotografias” do sinal em intervalos
-          regulares chamados
-          <strong>período de amostragem</strong>.
+          Existem dois tipos principais de vibrações sonoras:
         </p>
 
+        <h3>Vibrações simples</h3>
         <p>
-          A frequência de amostragem (&ldquo;sampling rate&rdquo;) indica
-          quantas amostras são feitas por segundo, medida em Hertz (Hz).
+          São a forma mais elementar de som, raramente encontradas na natureza de forma isolada.
         </p>
 
-        <h3>Critério de Nyquist</h3>
-        <p>
-          Segundo o Teorema de Nyquist-Shannon, o sinal deve ser amostrado com
-          frequência pelo menos <strong>duas vezes maior</strong> que sua
-          frequência máxima.
-        </p>
-
-        <p>Exemplo:</p>
         <ul>
-          <li>
-            Sinal com frequência máxima de 4 kHz → amostragem mínima de 8 kHz.
-          </li>
+          <li><strong>O que é ? </strong>Produzem ondas senoidais perfeitas e suaves.</li>
+          <li><strong>Frequência: </strong>Possuem apenas uma única frequência fundamental, sem harmônicos.</li>
+          <li><strong>Onde encontrar? </strong>O som de um diapasão, o apito de um teste de audiometria ou sons gerados eletronicamente.</li>
+          <li><strong>Sensação auditiva: </strong>Um som "limpo", porém sem textura ou "cor".</li>
         </ul>
 
+        <h3>Vibrações complexas</h3>
         <p>
-          Existe um trade-off importante: quanto maior a frequência de
-          amostragem, maior a fidelidade do sinal, porém maior também o consumo
-          de armazenamento e processamento.
+          Representam a quase totalidade dos sons que ouvimos no dia a dia, desde a voz humana até instrumentos musicais.
         </p>
+
+        <ul>
+          <li><strong>O que é ? </strong>Resultam da soma (superposição) de várias ondas senoidais diferentes ocorrendo ao mesmo tempo.</li>
+          <li><strong>Estrutura: </strong>São compostas por uma frequência fundamental (a nota principal) misturada com várias outras frequências mais altas,
+            chamadas de harmônicos.</li>
+          <li><strong>Onde encontrar? </strong>A voz humana, instrumentos musicais (como violino ou piano) e ruídos do dia a dia.</li>
+          <li><strong>Sensação auditiva: </strong>Percebemos como um som "rico", cheio de textura e identidade. É essa complexidade que cria o timbre,
+            permitindo distinguir quem ou o que está produzindo o som.</li>
+        </ul>
+
+
+
+        
+
       </section>
-
-      <section class="card">
-        <h2>3. Quantização</h2>
-        <p>
-          Após a amostragem, cada amostra ainda possui um valor analógico. Para
-          representá-la digitalmente, é preciso convertê-la em números discretos
-          — este processo é a
-          <strong>quantização</strong>.
-        </p>
-
-        <h3>PAM (Pulse Amplitude Modulation)</h3>
-        <p>
-          Antes da quantização, o sinal é representado por uma sequência de
-          pulsos cuja amplitude corresponde ao valor instantâneo do sinal
-          analógico — um processo chamado <strong>PAM</strong>.
-        </p>
-
-        <p>
-          A quantização converte cada pulso em um nível pré-definido, similar a
-          um “arredondamento”. O erro gerado é o
-          <strong>ruído de quantização</strong>, cuja magnitude depende da
-          resolução do conversor.
-        </p>
-      </section>
-
-      <section class="card">
-        <h2>4. PCM (Pulse Code Modulation)</h2>
-        <p>
-          Depois da quantização, cada nível é convertido em um código binário.
-          Essa etapa é a <strong>codificação</strong>, e gera o formato PCM,
-          amplamente usado em formatos como WAV, AIFF e no áudio de CDs.
-        </p>
-      </section>
-
-      <div class="back-btn-container">
-        <a class="menu-btn" href="./index.html">
-          Voltar ao Início
-        </a>
-      </div>
-    </main>
 
     <script src="./script.js"></script>
   </body>
