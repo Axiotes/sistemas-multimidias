@@ -43,6 +43,10 @@ body {
   color: white;
   transition: 0.3s;
   align-self: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu-btn:hover {
@@ -51,9 +55,39 @@ body {
 }
 
 .menu-btn.quiz {
-  background: #9b1c1c;
+  background: #1f6feb;
 }
 
-.menu-btn.quiz:hover {
-  background: #b62525;
+.card {
+  text-align: start;
+  padding: 25px;
+  background: #161b22;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 900px;
+  box-shadow: 0 0 10px #00000055;
+}
+
+.content {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card ul {
+  padding-left: 0;
+  list-style-position: inside;
+  margin-top: 10px;
+}
+
+.card h2, 
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.back-btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
 }
