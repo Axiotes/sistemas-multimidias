@@ -113,3 +113,14 @@ body {
   outline: none;
   border-radius: 8px;
 }
+
+.imagem {
+  width: 900px;
+  height: auto;
+}
+.card img {
+  display: block;
+  margin: auto;
+  border-radius: 2px;
+  max-width: 75%;
+}
