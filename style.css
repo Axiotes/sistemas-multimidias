@@ -91,3 +91,25 @@ body {
     justify-content: center;
     margin: 40px 0;
 }
+
+.audio-card {
+  background: #161b22;
+  padding: 25px;
+  margin: 25px auto;
+  border-radius: 10px;
+  max-width: 900px;
+  text-align: center;
+  box-shadow: 0 0 10px #00000055;
+}
+
+.audio-card h2 {
+  margin-bottom: 15px;
+  color: #58a6ff;
+}
+
+.audio-card audio {
+  width: 100%;
+  max-width: 500px;
+  outline: none;
+  border-radius: 8px;
+}
