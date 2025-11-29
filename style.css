@@ -136,3 +136,62 @@ body {
   height: auto;
   display: block;
 }
+
+.question-card {
+  background: #161b22;
+  padding: 25px;
+  border-radius: 10px;
+  margin: 25px 0;
+  box-shadow: 0 0 10px #00000055;
+}
+
+.options {
+  list-style: none;
+  padding: 0;
+}
+
+.options li {
+  margin: 10px 0;
+  background: #30363d;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.options li:hover {
+  background: #484f58;
+}
+
+.submit-btn {
+  width: 100%;
+  margin-top: 30px;
+  padding: 15px;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  background: #1f6feb;
+  color: white;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.submit-btn:disabled {
+  background: #30363d;
+  cursor: not-allowed;
+}
+
+.result {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.correct {
+  background: #238636;
+}
+
+.incorrect {
+  background: #da3633;
+}
