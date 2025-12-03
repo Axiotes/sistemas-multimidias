@@ -195,3 +195,10 @@ body {
 .incorrect {
   background: #da3633;
 }
+
+#video-container video {
+  border-radius: 10px;
+  box-shadow: 0 0 12px #00000088;
+  max-width: 90%;
+}
+

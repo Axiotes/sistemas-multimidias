@@ -24,52 +24,52 @@
       <section class="card">
         <h2>Introdução</h2>
         <p>
-          O som pode ser representado e manipulado digitalmente por meio de técnicas que permitem armazenar, 
-          transmitir e transformar sinais acústicos. Esse processo envolve a conversão das vibrações sonoras contínuas em sequências 
-          numéricas que podem ser tratadas pelos computadores.
+          O som pode ser representado e manipulado digitalmente por meio de
+          técnicas que permitem armazenar, transmitir e transformar sinais
+          acústicos. Esse processo envolve a conversção das vibrações sonoras
+          contínuas em sequências numéricas que podem ser tratadas pelos
+          computadores.
         </p>
-        
       </section>
 
       <section class="card">
         <h2>1. Amostragem</h2>
         <p>
-          É o número de vezes por segundo que medimos o valor da onda sonora. 
-          A frequência de amostragem é representada por Ws (sample rate) e quantização (quantos bits representam cada amostra).
+          É o número de vezes por segundo que medimos o valor da onda sonora. A
+          frequência de amostragem é representada por Ws (sample rate) e
+          quantização (quantos bits representam cada amostra).
         </p>
-        <p>
-            Exemplo:
-        </p>
+        <p>Exemplo:</p>
         <ul>
-            <p><strong>Telefonia tradicional</strong></p>
+          <p><strong>Telefonia tradicional</strong></p>
           <li>Ws = 8 kHz → 8.000 amostras/segundo</li>
           <li>Profundidade: 8 bits por amostra</li>
           <p>Taxa de transmissão: Rs = 8 bits × 8000 = 64 kbps</p>
         </ul>
 
         <ul>
-            <p><strong>Áudio de CD</strong></p>
+          <p><strong>Áudio de CD</strong></p>
           <li>Ws = 44,1 kHz → 44.100 amostras/segundo</li>
           <li>Profundidade: 16 bits por amostra</li>
           <p>Taxa por canal: Rs = 16 bits × 44100 = 705,6 kbps</p>
         </ul>
 
         <p>
-            Arquivos comprimidos, como MP3, reduzem essa taxa para cerca de 50 kbps mantendo boa qualidade.
+          Arquivos comprimidos, como MP3, reduzem essa taxa para cerca de 50
+          kbps mantendo boa qualidade.
         </p>
       </section>
 
       <section class="card">
         <h2>2. Tipos de Processamentos</h2>
-        <p>
-          Existem dois tipos principais de processamento:
-        </p>
+        <p>Existem dois tipos principais de processamento:</p>
 
         <h3>Processamento no domínio do tempo</h3>
         <p>
-          O domínio do tempo atua diretamente sobre as amostras. Inclui operações como:
+          O domínio do tempo atua diretamente sobre as amostras. Inclui
+          operações como:
         </p>
-        
+
         <ul>
           <li>cortar, copiar e colar trechos</li>
           <li>armazenar e reproduzir</li>
@@ -78,7 +78,8 @@
 
         <h3>Processamento no domínio da frequência</h3>
         <p>
-          O domínio da frequência analisa o som pelos seus componentes de frequência, usando transformações como a FFT, permitindo:
+          O domínio da frequência analisa o som pelos seus componentes de
+          frequência, usando transformações como a FFT, permitindo:
         </p>
 
         <ul>
@@ -88,34 +89,33 @@
           <li>reconhecimento de voz</li>
           <li>uso de equalizadores gráficos.</li>
         </ul>
-        
       </section>
 
       <section class="card">
-
         <h2>3. Compressão e Codecs</h2>
         <p>
-          A compressão de áudio utiliza características do sinal e do sistema auditivo humano para reduzir o tamanho dos arquivos. Métodos como:
+          A compressão de áudio utiliza características do sinal e do sistema
+          auditivo humano para reduzir o tamanho dos arquivos. Métodos como:
         </p>
-        
+
         <ul>
           <li>PCM: sem compressão</li>
           <li>ADPCM: compressão diferencial</li>
           <li>MP3: compressão amplamente utilizada</li>
         </ul>
-        <p>Codecs como MPEG Layer 1/2/3 e AC-3 variam em qualidade e taxa de bits.</p>
-
-      </section>
-
+        <p>
+          Codecs como MPEG Layer 1/2/3 e AC-3 variam em qualidade e taxa de
+          bits.
+        </p>
       </section>
 
       <section class="card">
-
         <h2>4. Formatos de Áudio</h2>
         <p>
-          Os formatos de áudio incluem uma vasta variedade, cada um com sua determinada características, exemplos:
+          Os formatos de áudio incluem uma vasta variedade, cada um com suas
+          determinadas características, exemplos:
         </p>
-        
+
         <ul>
           <li>AIFF: Áudio não compactado (Mac/Unix)</li>
           <li>AU: Compressão µ-law (Sun)</li>
@@ -126,9 +126,35 @@
           <li>MP2: Formato MPEG para rádio digital</li>
           <li>MOV/QuickTime: Suporta áudio e vídeo</li>
         </ul>
-        <p>Cada formato difere em compatibilidade, compressão e qualidade final.</p>
+        <p>
+          Cada formato difere em compatibilidade, compressão e qualidade final.
+        </p>
       </section>
-      
+
+      <section class="card">
+        <h2>5. Exemplo de Áudio Sintetizado</h2>
+        <p>
+          A seguir temos um pequeno exemplo de áudio musical produzido a partir
+          da síntese digital: nele foram sintetizados um toque de bateria e um
+          baixo eletrônico. Esses sons foram combinados através de técnicas de
+          processamento digital, demonstrando como elementos simples podem ser
+          misturados para formar composições mais complexas.
+        </p>
+
+        <div class="audio-card">
+          <h2>Música Sintetizada</h2>
+          <audio controls id="music-audio">
+            <source src="./assets/audios/musica.mp3" type="audio/mp3" />
+          </audio>
+        </div>
+
+        <!-- <div id="video-container" style="text-align: center; margin-top: 20px">
+          <video id="music-video" width="480" loop muted playsinline controls>
+            <source src="./assets/videos/animacao.mp4" type="video/mp4" />
+          </video>
+        </div> -->
+      </section>
+
       <div class="back-btn-container">
         <a class="menu-btn" href="./index.html"> Voltar ao Início </a>
       </div>

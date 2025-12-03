@@ -194,3 +194,32 @@ submitBtn.addEventListener("click", () => {
 
   submitBtn.disabled = true;
 });
+
+// const musicAudio = document.getElementById("music-audio");
+// const musicVideo = document.getElementById("music-video");
+
+// if (musicAudio && musicVideo) {
+//   musicVideo.muted = true;
+
+//   musicAudio.addEventListener("play", () => {
+//     musicVideo.currentTime = musicAudio.currentTime;
+//     musicVideo.play();
+//   });
+
+//   musicAudio.addEventListener("pause", () => {
+//     musicVideo.pause();
+//   });
+
+//   musicAudio.addEventListener("timeupdate", () => {
+//     if (musicAudio.currentTime < 0.1 && musicVideo.currentTime > 0.5) {
+//       musicVideo.currentTime = 0;
+//       musicVideo.play();
+//     }
+//   });
+
+//   musicAudio.addEventListener("timeupdate", () => {
+//     if (Math.abs(musicVideo.currentTime - musicAudio.currentTime) > 0.2) {
+//       musicVideo.currentTime = musicAudio.currentTime;
+//     }
+//   });
+// }
